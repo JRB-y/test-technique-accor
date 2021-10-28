@@ -15,6 +15,12 @@ const distance = (lat1, lon1, lat2, lon2) => {
 	return d;
 }
 
+// https://stackoverflow.com/a/39842070/9625755
+const isLatitude = (lat) => isFinite(lat) && Math.abs(lat) <= 90;
+const isLongitude = (lng) => isFinite(lng) && Math.abs(lng) <= 180;
+
 module.exports = {
-	distance: distance
+  distance,
+  isLatitude,
+  isLongitude,
 }
