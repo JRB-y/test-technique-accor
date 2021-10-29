@@ -1,0 +1,141 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+
+.card-body {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.card-img {
+  border-radius: 5px;
+  width: 300px;
+}
+
+.card-text {
+  margin-left: 25px;
+  margin-right: 14px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: #2A1E3C;
+}
+
+.card-subtitle {
+  color: #2F2F49;
+  font-size: 12px;
+}
+
+.gray-box {
+  background: #F4F4F6;
+  width: 100%;
+  border-radius: 5px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30px; */
+  height: 50%;
+}
+
+.box-title {
+  display: flex;
+  background-color: white;
+  /* display: inline; */
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-top: -17px;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.box-info, .box-price {
+  margin-top: 10px;
+  color: #847E7F;
+  font-size: large;
+  margin-right: 20px;
+}
+
+.member-price {
+  color: #3C477B;
+}
+.big-price {
+  font-size: larger;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px;
+}
+
+.card-footer > a {
+  color: #609EB5;
+}
+.card-footer > button {
+  border: none;
+  border-radius: 15px;
+  background-color: #04867A;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.card-footer > button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.tripadvisor-rating {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #2F2F49;
+}
+
+.svg-img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  .card-body {
+    flex-direction: column;
+  }
+  .card-img {
+    margin: auto;
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .card-footer > a {
+    margin: 10px 0;
+  }
+}
