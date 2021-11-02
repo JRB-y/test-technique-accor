@@ -134,8 +134,12 @@ html, body {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    text-align: center;
   }
   .card-footer > a {
     margin: 10px 0;
+  }
+  .gray-box {
+    margin-top: 30px;
   }
 }
